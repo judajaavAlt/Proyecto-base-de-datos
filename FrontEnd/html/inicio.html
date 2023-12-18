@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Inicio | DomesticApp</title>
+    <style> 
+      header
+      {
+          width: 100%;
+          height: 10vh;
+          background: #DAE0E6 url("/imagenes/logo.png") no-repeat fixed center top;
+          background-size: auto 10vh;
+      }
+
+      #profile
+      {
+          box-sizing: border-box;
+          height: calc(100%);
+          width: fit-content;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: left;
+          float: left;
+          margin-right: 1vw;
+          color: black;
+
+      }
+
+      #profile img
+      {
+          width: 8vh;
+          height: auto;
+          border-radius: 100%;
+
+      }
+
+      #profile span
+      {
+          font-size: calc(8vh/2.5);
+          margin-left: 10px;
+      }
+
+      nav
+      {
+          float:right;
+          width: 40vw;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          margin-right:1vw;
+      }
+
+      nav a
+      {
+          width: fit-content;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #28708d;
+          text-decoration: underline #28708d;
+          margin: 1%;
+          font-size: 4vh;
+          box-sizing: border-box;
+      }
+
+      nav a:hover
+      {
+          color: #6bc3e6;
+          text-decoration: underline #6bc3e6;
+      }
+
+      main
+      {
+        width:100%;
+        margin: 0px;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+      main div
+      {
+        width:17vw;
+        margin: 2vw 1vw;
+        box-sizing: border-box;
+        height: fit-content;
+        background-color: white;
+        border-radius: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0.5vw;
+        font-size: 4vh;
+      }
+      main div img
+      {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+</head>
+<body id="inicio">
+  <header>
+    <a href="perfil.html"><div id="profile">
+      <img src="/imagenes/profile.jpg" alt="foto">
+      <span>Mc LOVIN</span>
+    </div></a>
+    <nav>
+      <a href="contratos.html"> Contratos </a>
+      <a href = "trabajador.html"> Trabajar </a>
+    </nav>
+  </header>
+  <main>
+    <a href="usuario.html">
+      <div>
+        <img src="/imagenes/Sin título.png" alt="logo">
+        <p>TRABAJO</p>
+      </div>
+    </a>
+  </main>
+  
+</body>
+</html>

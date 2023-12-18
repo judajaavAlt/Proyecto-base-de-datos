@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Inicio | DomesticApp</title>
+    <style>
+    main div
+    {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    }
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+label { 
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+input {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+button {
+    width: 28vw;
+    margin-left: 16vw;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius:500px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+   </style>
+</head>
+<body id="inicio">
+  <form method="get">
+    <label for="correo">Correo electronico</label>
+    <input type="email" id="correo" name="email">
+    <label for="telefono">Telefono</label>
+    <input type="tel" id="telefono" name="phone" pattern="[0-9]{10}">
+    <label for="contraseña">Contraseña</label>
+    <input type="password" id="contraseña" name="password">
+    <button type="submit">Registrarse</button>
+    <button type="submit">Iniciar sesión</button>
+   </form>
+   <p>Aún no estoy registrado</p>
+   <p>Olvidé mi contraseña</p>
+    
+</body>
+</html>
+    

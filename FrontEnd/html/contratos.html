@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Contratos | DomesticApp</title>
+    <style>
+      section#contratos main
+      {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: column;
+      }
+      section#contratos main div
+      {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3vw;
+        background-color: white;
+        height: 20vh;
+        width: 80%;
+        box-sizing: border-box;
+        border-radius: 3vh;
+        margin-top: 5vh;
+      }
+      section#contratos main div img
+      {
+        height: 18vh;
+        width: auto;
+        border-radius: 100%;
+      }
+      .invisible
+      {
+        display: none;
+      }
+      section#contrato main
+      {
+        width: 56vw;
+        margin: 10vh 22vw ;
+        height: 80vh;
+        background-color: white;
+        border-radius: 20px;
+        padding: 2vw;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
+</head>
+<body id="trabajo">
+  
+  <section id="contratos" class="invisible">
+    <a href="inicio.html" style="color: black;">
+      <ion-icon name="arrow-back-outline" style="font-size: 8vh; position: absolute; top: 1vh;left: 1vw;float: left;"></ion-icon>
+    </a>
+    <header style="height: 10vh; width: 100%; display: flex;justify-content: center;align-items: center;">
+      <h1>Estas son las personas que tienes empleadas actualmente</h1>
+    </header>
+    <main>
+      <div onclick="change()" style="cursor:pointer;">
+        <img src="/imagenes/profile.jpg" alt=" foto">
+        <span>nombre: JhonDoe</span>
+        <span>Labor: Electricista</span>
+        <span>Estado: Trabajando</span>
+      </div>
+      <div onclick="change()" style="cursor:pointer;">
+        <img src="/imagenes/profile.jpg" alt=" foto">
+        <span>nombre: JhonDoe</span>
+        <span>Labor: Electricista</span>
+        <span>Estado: Trabajando</span>
+      </div>
+    </main>
+  </section>
+  <section id="contrato" class="">
+    <a onclick="change()" style="color: black; cursor:pointer;">
+      <ion-icon name="arrow-back-outline" style="font-size: 8vh; position: absolute; top: 1vh;left: 1vw;float: left;"></ion-icon>
+    </a>
+    <main>
+      <h1>SOLICITUD DE SERVICIO</h1>
+      <section style="width: 100%;">
+        <img src="/imagenes/profile.jpg" style="float: left; width: 15vw; border-radius:  100%; margin-top: 5%;">
+        <div style="display: flex; justify-content: top;flex-wrap: wrap;padding: 7%; flex-direction: column;font-size: 3vh;" >
+          <span>Nombre: Jhon Doe</span>
+          <span>labor: Electricista</span>
+          <span>Estado: Trabajando</span>
+          <span>Pago: ##.###$</span>
+          <span>Hora de llegada: 10pm</span>
+        </div>
+      </section>
+      <section style="display: flex;flex-flow: column; width: 100%; margin-top: 3vh;">
+        <span style="margin: 0px 2%;">Descripción</span>
+        <div style="width: 96%; margin: 0px 2%; height: fit-content; border: 5px solid #DAE0E6;">
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque culpa repellat a. Ab facilis,
+            harum possimus sed quae suscipit fuga sequi dicta deleniti perferendis ipsum repudiandae veniam. Fugit, ipsum eius?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem assumenda praesentium doloribus facere quia earum,
+             incidunt ullam iure illum obcaecati ex distinctio quo ratione! Doloribus obcaecati culpa placeat corrupti nisi.
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eos illo minus impedit aliquam deleniti,
+              odio nulla aperiam natus commodi at beatae sunt veniam cumque autem aspernatur, animi facilis incidunt?
+          </p>
+        </div>
+      </section>
+    </main>
+  </section>
+<script>
+  const ven1 = document.getElementById("contratos");
+  const ven2 = document.getElementById("contrato");
+  function change()
+  {
+    ven1.classList.toggle("invisible")
+    ven2.classList.toggle("invisible")
+  }
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
